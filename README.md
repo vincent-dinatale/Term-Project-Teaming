@@ -47,7 +47,7 @@ The following API keys are required to run this app:
 - One of the common issues with adding the Spotify API aspect was the connecting multiple pages and ending up with a 404 error
 ![Alt text](image-6.png)
 - Sometimes I would be able to obtain the music playlist I searched for and be missing the linking to the OpenWeather Data for my desired location
-![Alt text](image-7.png)
+- ![Alt text](image-7.png)
 - After searching a bit, I found that Spotify had the ability to embed a playlist straight into HTML thorugh a mini web player. 
 - The embeded playlist seemed like the most effective way forward since it would require less work with the CSS styling
 ![Alt text](image-9.png) 
