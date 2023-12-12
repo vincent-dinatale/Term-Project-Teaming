@@ -3,7 +3,7 @@ This web app is designed to find the weather of a major city and return a playli
 This is a simple app, the orginal idea was also to utilize the Spotify API, yet there were some issues running the output with allowing the user to search/ be recommended a playlist. 
 The Spotify.py file is an example of running the API and breaking down the responce data. 
 
-# **How to use the app?**
+# **How to use the app?** :compass:
 
 Download the required packages before running the code:
 
@@ -12,7 +12,7 @@ Download the required packages before running the code:
 - Base64 (pip install pybase24)
 - Dotenv (pip install python-dotenv)
 
-# **Required Access for APIs**
+# **Required Access for APIs**:world_map:
 
 The following API keys are required to run this app: 
 
