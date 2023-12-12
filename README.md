@@ -20,11 +20,17 @@ The following API keys are required to run this app:
 - OpenWeather API (https://openweathermap.org/appid)
 - Spoify API (https://developer.spotify.com/documentation/web-api/tutorials/getting-started)
 
- 
+# **Why a Weather Plus Spotify Music Player?**
+
+-Overall felt like it seemed like a fun project that could utilzie 2 APIs and is something I might use in the future whether I am studying or want to change up my playlists. 
+-Neat idea to map temperature to different playlists, make it a bit different from the normal weather apps and offers more utility to the end-users. 
+-Also always felt that weather typically had a corresponding music mood and wanted to build upon that idea. 
+
 # **How Does it Work**  :cowboy_hat_face:
 
 - This app utilizes the OpenWeather API which returns JSON data. 
 - The user will input a desired city "location" and the app will access the API and searched for the desired location and return the JSON data, which will be further split into the desired data points of temperature, feels like temperature, temp. min, temp. max, humidity, wind, and gust speeds. where the response data is broken down based on the location 
+- ![Alt text](image-12.png)
 - ![Alt text](image.png)
 - Once the data has been gathered by the app it will be loaded onto the weather.html page
 - The weather.html page has a textbox where all of the data points will be imputed 
@@ -52,3 +58,7 @@ The following API keys are required to run this app:
 - The embeded playlist seemed like the most effective way forward since it would require less work with the CSS styling
 ![Alt text](image-9.png) 
 - One drawback of the embeded playlist is the limit on the various playlist that could be possible for the weather combinations. Since all of the possible playable playlists right now in the website are pre-selected. 
+
+# **Final Product** 
+
+![Alt text](image-11.png)
