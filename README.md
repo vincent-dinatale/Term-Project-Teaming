@@ -25,7 +25,7 @@ The following API keys are required to run this app:
 
 - This app utilizes the OpenWeather API which returns JSON data. 
 - The user will input a desired city "location" and the app will access the API and searched for the desired location and return the JSON data, which will be further split into the desired data points of temperature, feels like temperature, temp. min, temp. max, humidity, wind, and gust speeds. where the response data is broken down based on the location 
-![Alt text](image.png)
+- ![Alt text](image.png)
 - Once the data has been gathered by the app it will be loaded onto the weather.html page
 - The weather.html page has a textbox where all of the data points will be imputed 
 ![Alt text](image-1.png)
