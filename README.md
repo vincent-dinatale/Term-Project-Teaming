@@ -25,13 +25,17 @@ The following API keys are required to run this app:
 
 - This app utilizes the OpenWeather API which returns JSON data. 
 - The user will input a desired city "location" and the app will access the API and searched for the desired location and return the JSON data, which will be further split into the desired data points of temperature, feels like temperature, temp. min, temp. max, humidity, wind, and gust speeds. where the response data is broken down based on the location 
+![Alt text](image.png)
 - Once the data has been gathered by the app it will be loaded onto the weather.html page
 - The weather.html page has a textbox where all of the data points will be imputed 
+![Alt text](image-1.png)
 - The data points from the API for the specific location will be utilized by the get_playlist_url function to choose from a few pre-selected weather/ temperature themed playlists. 
 - The determination of the playlist is based on temperature range and weather conditions
 - The get_playlist_url function utilizes a basic if else statement to return a url to the corresponding Spotify playlist
 - This corresponding Spotify playlist will then be inputed into the weather.html page, where it will be showcased in a mini Spotify Web Player via embeded code from Spotify 
+![Alt text](image-2.png)
 - The weather.html page additionally has a live weather map that was added from the RainViewer (https://www.rainviewer.com/radars/united-states.html) via embeded code
+![Alt text](image-3.png)
 
 # **Design Choices/ Issues** :orange:
 
