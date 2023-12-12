@@ -20,8 +20,8 @@ The following API keys are required to run this app:
 - OpenWeather API (https://openweathermap.org/appid)
 - Spoify API (https://developer.spotify.com/documentation/web-api/tutorials/getting-started)
 
-
-# **How Does it Work** 
+ 
+# **How Does it Work**  :cowboy_hat_face:
 
 - This app utilizes the OpenWeather API which returns JSON data. 
 - The user will input a desired city "location" and the app will access the API and searched for the desired location and return the JSON data, which will be further split into the desired data points of temperature, feels like temperature, temp. min, temp. max, humidity, wind, and gust speeds. where the response data is broken down based on the location 
@@ -33,7 +33,7 @@ The following API keys are required to run this app:
 - This corresponding Spotify playlist will then be inputed into the weather.html page, where it will be showcased in a mini Spotify Web Player via embeded code from Spotify 
 - The weather.html page additionally has a live weather map that was added from the RainViewer (https://www.rainviewer.com/radars/united-states.html) via embeded code
 
-# **Design Choices/ Issues** 
+# **Design Choices/ Issues** :orange:
 
 - Orginally the plan was to utilize the Spotify API yet it proved to be a bit more difficult when implementing into Flask, even though it utilizes JSON data format
 - In the spotify.py file is an area showing the ability to read JSON data from the API and return either with an artist or the song titles listed in a playlist
