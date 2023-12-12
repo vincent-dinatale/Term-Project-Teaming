@@ -1,5 +1,4 @@
-# **Welcome to the Weather Plus Spotify Music Player**: ![alt text](/[path/img.jpg](https://play-lh.googleusercontent.com/cShys-AmJ93dB0SV8kE6Fl5eSaf4-qMMZdwEDKI5VEmKAXfzOqbiaeAsqqrEBCTdIEs) "spotify")
-
+# **Welcome to the Weather Plus Spotify Music Player**: :sun_behind_small_cloud:
 This web app is designed to find the weather of a major city and return a playlist based on the weather conditions such as temperature. 
 This is a simple app, the orginal idea was also to utilize the Spotify API, yet there were some issues running the output with allowing the user to search/ be recommended a playlist. 
 The Spotify.py file is an example of running the API and breaking down the responce data. 
