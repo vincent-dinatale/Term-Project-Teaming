@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* background-color:#f0f0f0; */
+            background-color: #72aee6;
+            background-image: url('weather1.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Set the height to fill the viewport */
+            margin: 0; /* Remove default margin */
+            padding: 0; }
+      form {text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+      h1 {font-size: 33px;;
+        text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+      .container {max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            padding-left: 25px;
+            padding-right: 50px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            background-color: rgba(255, 255, 255, 0.5); /* Set the background color to be transparent */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjust the alpha value here for the box shadow transparency */
+            margin-top: 105px;}
+      input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;}
+        
+      button {
+            background-color: firebrick;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;}
+      .weather-info {
+            margin-top: 20px;}
+        iframe {padding: 50px;
+            text-align: center;}
+
+
+    
+      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>The Weather Today...</h1>
+        <p>Temperature in {{ location }} is {{ temperature }} Degrees Fahrenheit. </p>
+        <p>Weather Condition: {{weather_conditions}} </p>
+        <p>Temperature Min: {{temp_min}} Degrees Fahrenheit </p>
+        <p> Temperature Max: {{temp_max}} Degrees Fahrenheit</p>
+        <p> Humidity: {{ humidity }}</p>
+        <h2>Other Conditions</h2>
+        <p> Wind: {{ wind }} Miles per Hour </p>
+        <p>Gust: {{ gust }} Miles per Hour</p>
+    </div>
+
+    {% if playlist_url %}
+    <iframe style="border-radius:12px; margin: 0 auto; display: block;" src="{{ playlist_url }}" width="600px" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+{% endif %}
+
+
+<!-- <h1>Spotify Playlist Information</h1>
+
+<form method="POST">
+    <label for="playlist_name">Enter Playlist Name:</label>
+    <input type="text" name="playlist_name" required>
+    <button type="submit">Get Playlist Info</button>
+</form> -->
+
+<!-- {% if playlist_name %}
+    <h2>Playlist: {{ playlist_name }}</h2>
+    <img src="{{ playlist_art }}" alt="Playlist Art" style="max-width: 300px;">
+    <p>Playlist Link: <a href="{{ playlist_link }}" target="_blank">{{ playlist_link }}</a></p>
+    <h3>Tracks:</h3>
+    <ul>
+        {% for track in tracks %}
+            <li>{{ track.track.name }} by {{ track.track.artists[0].name }}</li>
+        {% endfor %}
+    </ul>
+{% endif %} -->
+
+<!-- Your existing HTML code -->
+
+<!-- Search bar for Spotify playlists -->
+
+<div id="iframe-container">
+    <iframe style="border-radius:12px; margin: 0 auto; display: block;" src="https://www.rainviewer.com/map.html?loc=42.261,-69.4556,5&oFa=0&oC=0&oU=0&oCS=1&oF=0&oAP=1&c=3&o=83&lm=1&layer=radar&sm=1&sn=1&hu=false" width="600px" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+ 
+
+  </body>
+</html>
