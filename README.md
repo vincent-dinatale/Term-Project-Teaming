@@ -32,7 +32,7 @@ The following API keys are required to run this app:
 - The data points from the API for the specific location will be utilized by the get_playlist_url function to choose from a few pre-selected weather/ temperature themed playlists. 
 - The determination of the playlist is based on temperature range and weather conditions
 - The get_playlist_url function utilizes a basic if else statement to return a url to the corresponding Spotify playlist
-![Alt text](image-8.png)
+![Alt text](image-10.png)
 - This corresponding Spotify playlist will then be inputed into the weather.html page, where it will be showcased in a mini Spotify Web Player via embeded code from Spotify 
 ![Alt text](image-2.png)
 - The weather.html page additionally has a live weather map that was added from the RainViewer (https://www.rainviewer.com/radars/united-states.html) via embeded code
