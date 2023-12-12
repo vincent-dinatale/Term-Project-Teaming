@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist Info</title>
+</head>
+<body>
+    <h1>Spotify Playlist Information</h1>
+
+    <form method="POST">
+        <label for="playlist_name">Enter Playlist Name:</label>
+        <input type="text" name="playlist_name" required>
+        <button type="submit">Get Playlist Info</button>
+    </form>
+
+    {% if playlist_name %}
+        <h2>Playlist: {{ playlist_name }}</h2>
+        <img src="{{ playlist_art }}" alt="Playlist Art" style="max-width: 300px;">
+        <p>Playlist Link: <a href="{{ playlist_link }}" target="_blank">{{ playlist_link }}</a></p>
+        <h3>Tracks:</h3>
+        <ul>
+            {% for track in tracks %}
+                <li>{{ track.track.name }} by {{ track.track.artists[0].name }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+<!-- </html> --> -->
+<!-- index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Search</title>
+</head>
+<body>
+    <h1>Playlist Search</h1>
+    
+    <form method="POST" action="{{ url_for('index') }}">
+        <label for="playlist_name">Playlist Name:</label>
+        <input type="text" name="playlist_name" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Display playlist details here -->
+    {% if playlist_name %}
+        <h2>Playlist: {{ playlist_name }}</h2>
+        <!-- Display other playlist details and tracks -->
+    {% endif %}
+</body>
+</html>
+
